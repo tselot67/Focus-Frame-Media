@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -14,6 +15,10 @@
     width: 100%;
     border: 1px solid black;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-image: linear-gradient(45deg, grey, black);
 }
 #nav-h1 {
     margin-left: 40px;
@@ -24,13 +29,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
 }
 #nav-btn {
     margin-right: 40px;
     margin-left: auto;
+    padding: 10px;
+}
+#nav-btn > button > a {
+    text-decoration: none;
+    color: black;
+}
+#nav-btn > button {
+    padding: 10px;
+    background-color: goldenrod;
+    border: none;
 }
 #hero {
-    height: 500px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,11 +60,21 @@
     padding-left: 30px;
     padding-top: 50px;
     position: relative;
+    background-image: url('../images/photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: brown;
 }
 #hero > div > button {
     width: 150px;
     margin-top: 20px;
     padding: 10px 8px 10px 8px;
+    background-color: goldenrod;
+    border: none;
+}
+#hero > div > button > a {
+    text-decoration: none;
+    color: black;
 }
 #plans {
     display: flex;
@@ -51,7 +82,7 @@
     justify-content: space-around;
     gap: 60px;
     position: absolute;
-    top: 430px;
+    top: 520px;
     left: 130px;
     width: 80%;
 }
@@ -61,23 +92,28 @@
     height: 150px;
     width: 50%;
     display: flex;
-   
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-color: #2B2B2B;
+    border-radius: 20px;
+    border: none;
 
 }
-.plan >img {
-    width:40px;
-    height:40px;
+.plan > i {
+    font-size: 30px;
+    color: goldenrod;
+}
+.plan > p {
+    color: white;
 }
 #features {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    border: 1px solid black;
-    margin: 200px 30px 200px 30px;
+    margin: 230px 30px 200px 30px;
     height: 480px;
+    background-color: white;
 }
 #featured {
     display: flex;
@@ -94,6 +130,11 @@
     padding: 10px;
     border-radius: 20px;
     border: none;
+    background-color: goldenrod;
+}
+#featured > div > button > a {
+    text-decoration: none;
+    color: black;
 }
 body {
     background-color: rgb(240, 239, 239);
@@ -113,4 +154,63 @@ body {
     height: 250px;
     width: 100%;
     object-fit: cover;
+}
+#footer {
+    display: flex;
+    gap: 10%;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: black;
+}
+#footer > div > h2 {
+    text-align: center;
+    color: white;
+}
+#footer >div >p {
+    text-align: center;
+    color: white;
+}
+#links {
+    display: flex;
+    padding-left: 45px;
+    gap: 20px;
+}
+#links > img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: goldenrod;
+}
+.quick {
+    color: goldenrod;
+}
+.quick > a {
+    text-decoration: none;
+    color: white;
+}
+.service {
+    color:goldenrod;
+}    
+.service > a {
+    color: white;
+    text-decoration: none;
+}
+#contact > ul > div >img {
+    width: 20px;
+    height: 20px;
+}
+#contact > ul > div {
+    display: flex;
+    gap: 20px;
+}
+#contact > ul > div > p {
+    color: white;
+}
+#contact > ul >p {
+    color: goldenrod;
+}
+ul {
+    list-style-type: none;
 }
