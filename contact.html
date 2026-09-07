@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title> Focus Frame Media</title>
         <link href="./styles/contact.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"/>
     </head>
     <body>
         <section id="container">
@@ -39,7 +40,7 @@
             </section>
             <!-- This is contact section-->
             <section>
-            <div id="contact">
+            <div id="contact-sec">
                 <div id="contact-form">
                     <h3> SEND US A MESSAGE </h3>
                     <form>
@@ -51,11 +52,11 @@
                         </div>
                         <div>
                             <div id="check">
-                                <p> Which one do you want to book? </p><br>
+                                <p> <strong>Which one do you want to book?</strong> </p><br>
                                 <label>
                                     <input type="checkbox" name="book" value="wedding"/>
                                     Wedding Photoshoot
-                                </label>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <label>
                                     <input type="checkbox" name="book" value="birthday"/>
                                     Birthday Photoshoot
@@ -65,7 +66,7 @@
                                 <label>
                                     <input type="checkbox" name="book" value="vacation"/>
                                     Vacation Photoshoot
-                                </label>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <label>
                                     <input type="checkbox" name="book" value="pregnancy"/>
                                     Pregnancy Photoshoot
@@ -74,37 +75,111 @@
                         </div><br>
                         <div id="message">
                             <label for="message"> <p>MESSAGE</p></label><br>
-                            <textarea id="message" name="message"></textarea>
+                            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
 
                         </div><br>
-                        <button> SUBMIT </button>
+                        <button> SEND MESSAGE </button>
                         
                     </form>
 
                 </div>
                 <div id="contact-us">
-                    <h3> CONTACT INFORMATION </h3>
-                    <div id="infos"> 
-                        <div class="info">
-                            
-                            <p><strong> LOCATION</strong><br> Addis Ababa, Ethiopia</p>
+                    <h3> CONTACT INFORMATION</h3>
+                    <div id="cont">
+                        <div class="cont-us">
+                            <div><i class="fa-solid fa-location-dot web-icon"></i></div>
+                            <div>
+                                <p><strong> LOCATION </strong></p>  
+                                <p> Addis Ababa, Ethiopia</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            
-                            <p><strong> PHONE </strong><br> +251967542356</p>
+                        <hr>
+                        <div class="cont-us">
+                            <div><i class="fa-solid fa-phone web-icon"></i></div>
+                            <div>
+                                <p><strong> PHONE</strong></p>
+                                <p> +251976548762</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            
-                            <p><strong> EMAIL </strong><br> focusframemedia@gmail.com</p>
+                        <hr>
+                        <div class="cont-us">
+                            <div><i class="fa-brands fa-instagram web-icon"></i></div>
+                            <div>
+                                <p><strong> INSTAGRAM</strong></p>
+                                <p> @framefocus_media </p>
+                            </div>
                         </div>
-                        <div class="info">
-                            
-                            <p><strong> HOURS </strong><br> Mon - Sat: 9:00AM - 6:00AM <br> Sunday: Closed</p>
+                        <hr>
+                        <div class="cont-us">
+                            <div><i class="fa-regular fa-clock web-icon"></i></div>
+                            <div>
+                            <p><strong> HOURS </strong></p>
+                            <P> Mon - Sat 9:00 AM - 6:00PM <br> Sunday: Closed</P></div>
+                        </div>
+                        <hr>
+                        <div id="follow">
+                            <p> <strong> FOLLOW US</strong></p><br>
+                            <div id="cont-link">
+                                <i class="fa-brands fa-instagram website-icon"></i>
+                                <i class="fa-brands fa-facebook-f website-icon"></i>
+                                <i class="fa-brands fa-youtube yt-icon"></i>
+                                <i class="fa-brands fa-tiktok website-icon"></i>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </section>
+        </section>
+        <!-- This is a footer section -->
+        <section id="footer">
+            <div>
+                <h2> FOCUS FRAME<br> MEDIA </h2><br>
+                <hr><br>
+                <p>We capture the moments, <br>you'll cherish forever.</p><br><br>
+                <div id="links"> 
+                    <i class="fa-brands fa-instagram footer-icon"></i>
+                    <i class="fa-brands fa-facebook footer-icon"></i>
+                    <i class="fa-brands fa-youtube footer-icon"></i>
+                    <i class="fa-brands fa-tiktok footer-icon"></i>
+                </div>
+            </div>
+            <div >
+                <ul>
+                    <li class="quick"> QUICK LINKS</li><br><br>
+                    <li class="quick"> <a href="./index.html"> Home</a> </li><br>
+                    <li class="quick"> <a href="./about.html"> About Us</a> </li><br>
+                    <li class="quick"> <a href="./services.html"> Services </a> </li><br>
+                    <li class="quick"> <a href="./gallery.html"> Gallery</a> </li><br>
+                    <li class="quick"> <a href="./contact.html"> Contact</a> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="service"> OUR SERVICES </li><br><br>
+                    <li class="service"> <a href="./index.html"> Home</a> </li><br>
+                    <li class="service"> <a href="./index.html"> Home</a> </li><br>
+                    <li class="service"> <a href="./index.html"> Home</a> </li><br>
+                    <li class="service"> <a href="./index.html"> Home</a> </li><br>
+                    <li class="service"> <a href="./index.html"> Home</a> </li><br>
+                </ul>
+            </div>
+            <div id="contact">
+                <ul>
+                    <p> CONTACT US</p><br><br>
+                    <div>
+                        <i class="fa-solid fa-location-dot home-icon"></i>
+                        <p> Addis Ababa, Ethiopia</p>
+                    </div><br>
+                    <div>
+                        <i class="fa-regular fa-envelope home-icon"></i>
+                        <p> focusframemedia@gmail.com </p>
+                    </div><br>
+                    <div>
+                        <i class="fa-solid fa-phone home-icon"></i>
+                        <p> +251 986 535 796</p>
+                    </div>
+                </ul>
+            </div>
         </section>
     </body>
 </html>
