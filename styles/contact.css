@@ -50,7 +50,7 @@ nav > a{
     border: none;
 }
 #hero {
-    height: 500px;
+    height: 550px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ nav > a{
     gap: 15px;
     padding-left: 30px;
     padding-top: 50px;
-    border: 1px solid black;
+    border: 1px solid #1C1C1C;
     position: relative;
     background-image: url(../images/back\ img.jpg);
     background-size: cover;
@@ -114,7 +114,7 @@ textarea {
 #contact-sec {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    border: 1px solid #1C1C1C;
     height: 650px;
     padding-top: 50px;
     padding-left: 100px;
@@ -265,7 +265,7 @@ form > button {
 #footer {
     display: flex;
     gap: 10%;
-    border: 1px solid black;
+    border: 1px solid #1C1C1C;
     padding: 50px;
     background-color: black;
 }
