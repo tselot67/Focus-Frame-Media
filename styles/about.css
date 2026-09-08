@@ -1,0 +1,918 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+}
+#nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-image: linear-gradient(45deg, grey, black);
+}
+#nav-h1 {
+    margin-left: 40px;
+    margin-right: auto;
+}
+#nav > div >nav {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+}
+#nav-btn {
+    margin-right: 40px;
+    margin-left: auto;
+    padding: 10px;
+}
+#nav-btn > button > a {
+    text-decoration: none;
+    color: black;
+}
+#nav-btn > button {
+    padding: 10px;
+    background-color: goldenrod;
+    border: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0a0a0a;
+    color: #f2f2f2;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 100px;
+    padding-top: 50px;
+    position: relative;
+    background-image: url('../images/girl\ with\ camera.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: brown;
+}
+.h {
+    font-size:x-large;
+}
+.hh {
+    font-size: xx-large;
+}
+/*.small-title {
+    color: var(--gold);
+
+    font-size: 9px;
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.gold-line {
+    width: 32px;
+    height: 1px;
+
+    background: var(--gold);
+
+    margin: 25px 0;
+}*/
+
+
+/* =========================
+   PHOTOGRAPHERS
+========================= */
+
+.photographers {
+    min-height: 600px;
+
+    padding: 90px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #151515,
+            #0d0d0d
+        );
+
+    display: flex;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.section-intro {
+    width: 32%;
+}
+
+.section-intro h2,
+.style-intro h2,
+.equipment-content h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 45px;
+
+    font-weight: 400;
+
+    line-height: 0.95;
+}
+
+.section-intro > p:last-child {
+    margin-top: 30px;
+
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+    max-width: 320px;
+}
+
+
+/* CARDS */
+
+.photographer-cards {
+    display: flex;
+
+    gap: 25px;
+
+    flex: 1;
+}
+
+.photographer-card {
+    width: 50%;
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid #303030;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-image img {
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%) brightness(65%);
+
+    transition: 0.6s;
+}
+
+.photographer-card:hover img {
+    transform: scale(1.05);
+
+    filter: grayscale(70%) brightness(70%);
+}
+
+
+/* CARD OVERLAY */
+
+.profile-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background:
+        linear-gradient(
+            transparent 25%,
+            rgba(0,0,0,0.95) 100%
+        );
+}
+
+.number {
+    position: absolute;
+
+    top: 25px;
+    right: 20px;
+
+    color: var(--gold);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+}
+
+.profile-overlay h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    font-weight: 400;
+}
+
+.role {
+    color: var(--gold);
+
+    font-size: 9px;
+
+    margin-top: 2px;
+}
+
+.quote {
+    color: #aaa;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    margin: 15px 0;
+
+    max-width: 260px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: #999;
+}
+
+
+/* =========================
+   SHOOTING STYLE
+========================= */
+
+.shooting-style {
+    padding: 100px 7%;
+
+    display: flex;
+
+    gap: 70px;
+
+    background: #0b0b0b;
+}
+
+.style-intro {
+    width: 34%;
+}
+
+.style-intro h2 {
+    font-size: 55px;
+}
+
+.style-tags {
+    display: flex;
+
+    gap: 15px;
+
+    margin: 30px 0;
+
+    flex-wrap: wrap;
+}
+
+.style-tags span {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #ccc;
+}
+
+.style-tags span:not(:last-child)::after {
+    content: "·";
+
+    color: var(--gold);
+
+    margin-left: 15px;
+}
+
+.style-intro > p:last-child {
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+    max-width: 330px;
+}
+
+
+/* STYLE ITEMS */
+
+.style-items {
+    flex: 1;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+.style-item {
+    flex: 1;
+
+    border-right: 1px solid #333;
+
+    padding-right: 15px;
+}
+
+.style-image {
+    height: 300px;
+
+    overflow: hidden;
+}
+
+.style-image img {
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%) brightness(65%);
+
+    transition: 0.5s;
+}
+
+.style-item:hover img {
+    transform: scale(1.05);
+
+    filter: grayscale(40%) brightness(70%);
+}
+
+.style-number {
+    display: block;
+
+    color: var(--gold);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    margin-top: 12px;
+}
+
+.style-item h3 {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: 400;
+
+    margin-top: 2px;
+}
+
+.style-item p {
+    color: #888;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    margin-top: 10px;
+
+    padding-right: 10px;
+}
+
+
+/* =========================
+   EQUIPMENT
+========================= */
+
+.equipment {
+    min-height: 500px;
+
+    display: flex;
+
+    background: #121212;
+}
+
+
+/* CAMERA IMAGE */
+
+.equipment-image {
+    width: 48%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.equipment-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%) brightness(45%);
+}
+
+
+/* CAPTION */
+
+.equipment-caption {
+    position: absolute;
+
+    left: 8%;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.equipment-caption span {
+    display: block;
+
+    width: 35px;
+    height: 1px;
+
+    background: var(--gold);
+
+    margin-bottom: 20px;
+}
+
+.equipment-caption p {
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    line-height: 2;
+
+    color: #aaa;
+}
+
+
+/* EQUIPMENT CONTENT */
+
+.equipment-content {
+    width: 52%;
+
+    padding: 90px 6%;
+}
+
+.equipment-content h2 {
+    margin-bottom: 50px;
+}
+
+
+/* EQUIPMENT GRID */
+
+.equipment-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.equipment-item {
+    padding: 25px 20px;
+
+    border-top: 1px solid #333;
+}
+
+.equipment-item:nth-child(odd) {
+    border-right: 1px solid #333;
+}
+
+.equipment-icon {
+    color: var(--gold);
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+.equipment-item h3 {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+.equipment-item p {
+    font-size: 9px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+.equipment-item small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #666;
+
+    font-size: 8px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+    min-height: 480px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.8)
+        ),
+        url("images/cta-photo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.cta-overlay {
+    padding-left: 7%;
+}
+
+.cta-overlay p {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 35px;
+
+    line-height: 0.9;
+}
+
+.cta-overlay h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 50px;
+
+    font-style: italic;
+
+    color: var(--gold);
+
+    line-height: 0.9;
+
+    margin-top: 5px;
+}
+
+.cta-overlay a {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #ccc;
+
+    transition: 0.3s;
+}
+
+.cta-overlay a:hover {
+    color: var(--gold);
+}
+
+.cta-credit {
+    position: absolute;
+
+    right: 6%;
+    bottom: 35px;
+
+    color: #999;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    line-height: 2;
+}
+#footer {
+    display: flex;
+    gap: 10%;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: black;
+}
+#footer > div > h2 {
+    text-align: center;
+    color: white;
+}
+hr {
+    width: 50px;
+    height: 2px;
+    background-color: goldenrod;
+    border: none;
+    margin-left: 100px;
+}
+#footer >div >p {
+    text-align: center;
+    color: white;
+}
+#links {
+    display: flex;
+    padding-left: 15px;
+    gap: 20px;
+}
+.footer-icon {
+    font-size: 20px;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    padding: 10px 30px 10px 10px;
+    border-radius: 50%;
+}
+.quick {
+    color: goldenrod;
+}
+.quick > a {
+    text-decoration: none;
+    color: white;
+}
+.service {
+    color:goldenrod;
+}    
+.service > a {
+    color: white;
+    text-decoration: none;
+}
+#contact > ul > div >img {
+    width: 20px;
+    height: 20px;
+}
+#contact > ul > div {
+    display: flex;
+    gap: 20px;
+}
+#contact > ul > div > p {
+    color: white;
+}
+#contact > ul >p {
+    color: goldenrod;
+}
+.home-icon {
+    font-size: 20px;
+    color: goldenrod;
+}
+ul {
+    list-style-type: none;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .nav-slogan {
+        display: none;
+    }
+
+    .about-hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        width: 50%;
+
+        padding-left: 6%;
+    }
+
+    .hero-image {
+        width: 65%;
+
+        right: 0;
+    }
+
+    .hero-side-text {
+        display: none;
+    }
+
+    .photographers {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .section-intro {
+        width: 100%;
+    }
+
+    .photographer-cards {
+        width: 100%;
+    }
+
+    .shooting-style {
+        flex-direction: column;
+    }
+
+    .style-intro {
+        width: 100%;
+    }
+
+    .style-items {
+        width: 100%;
+    }
+
+    .equipment {
+        flex-direction: column;
+    }
+    .equipment-image,
+    .equipment-content {
+        width: 100%;
+    }
+
+    .equipment-image {
+        height: 450px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 70px;
+
+        padding: 0 18px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .logo-text span {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .about-hero {
+        min-height: 700px;
+
+        display: block;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        padding: 80px 25px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 65px;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        height: 420px;
+
+        right: 0;
+        top: 280px;
+    }
+
+
+    /* PHOTOGRAPHERS */
+
+    .photographers {
+        padding: 70px 25px;
+
+        gap: 40px;
+    }
+
+    .section-intro h2 {
+        font-size: 42px;
+    }
+
+    .photographer-cards {
+        flex-direction: column;
+    }
+
+    .photographer-card {
+        width: 100%;
+
+        height: 430px;
+    }
+
+
+    /* STYLE */
+
+    .shooting-style {
+        padding: 70px 25px;
+    }
+
+    .style-intro h2 {
+        font-size: 50px;
+    }
+
+    .style-items {
+        flex-direction: column;
+    }
+
+    .style-item {
+        border-right: none;
+
+        border-bottom: 1px solid #333;
+
+        padding-bottom: 25px;
+    }
+
+    .style-image {
+        height: 300px;
+    }
+
+
+    /* EQUIPMENT */
+
+    .equipment-content {
+        padding: 70px 25px;
+    }
+
+    .equipment-content h2 {
+        font-size: 40px;
+    }
+
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-item:nth-child(odd) {
+        border-right: none;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+        min-height: 430px;
+    }
+
+    .cta-overlay {
+        padding-left: 25px;
+    }
+
+    .cta-overlay p {
+        font-size: 28px;
+    }
+
+    .cta-overlay h2 {
+        font-size: 43px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+}
