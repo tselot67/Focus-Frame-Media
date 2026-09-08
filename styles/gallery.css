@@ -14,6 +14,10 @@
     width: 100%;
     border: 1px solid black;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-image: linear-gradient(45deg, grey, black);
 }
 #nav-h1 {
     margin-left: 40px;
@@ -24,10 +28,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
 }
 #nav-btn {
     margin-right: 40px;
     margin-left: auto;
+    padding: 10px;
+}
+#nav-btn > button > a {
+    text-decoration: none;
+    color: black;
+}
+#nav-btn > button {
+    padding: 10px;
+    background-color: goldenrod;
+    border: none;
 }
 #hero {
     height: 500px;
@@ -42,7 +62,7 @@
     position: relative;
 }
 .portfolio {
-    border: 1px solid black;
+    border: 1px solid #242424;
     height: 400px;
     width: 100%;
 
@@ -52,65 +72,67 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    background-color: #1C1C1C;
 }
 #wedding-text {
-    width: 50%;
+    width: 40%;
     padding-left: 50px;
+}
+#wedding-text > h2{
+    color: white;
+}
+.para {
+    color: goldenrod;
+}
+.paras {
+    color: white;
 }
 #wedding-img {
-    width: 50%;
+    width: 55%;
     height: 80%;
     display: grid;
-    grid-template-columns: 250px 250px;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
     padding-left: 50px;
-}
-.pic {
-    border: 1px solid black;
 }
 #div1 {
-    grid-row: span2;
+    grid-column: 1;
+    grid-row: span 2;
 }
-#birthday {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#div1 > img {
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
-#birthday-text {
-    width: 50%;
-    padding-left: 50px;
+#div2 {
+    grid-column: 2;
+    grid-row: 1;
 }
-#birthday-img {
-    width: 50%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 250px 250px;
-    gap: 20px;
-    padding-left: 50px;
-}
-.pic1 {
-    border: 1px solid black;
-}
-#maternity {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#div2 > img {
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
-#maternity-text {
-    width: 50%;
-    padding-left: 50px;
+#div3 {
+    grid-column: 2;
+    grid-row: 2;
 }
-#maternity-img {
-    width: 50%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 250px 250px;
-    gap: 20px;
-    padding-left: 50px;
+#div3 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-.pic2 {
+#div4 {
+    grid-column: 3;
+    grid-row: span 2;
+}
+#div4 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pic {
     border: 1px solid black;
 }
 #brand {
@@ -118,20 +140,192 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    background-color: #1C1C1C;
 }
 #brand-text {
-    width: 50%;
+    width: 40%;
     padding-left: 50px;
+}
+#brand-text > h2 {
+    color: white;
 }
 #brand-img {
-    width: 50%;
+    width: 55%;
     height: 80%;
     display: grid;
-    grid-template-columns: 250px 250px;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
     padding-left: 50px;
 }
-.pic3 {
+#div13 {
+    grid-column: 1;
+    grid-row: 1;
+}
+#div13 >img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#div14 {
+    grid-column: 2;
+    grid-row: 1;
+}
+#div14 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#div15 {
+    grid-column: span 2;
+    grid-row: 2;
+}
+#div15 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#div16 {
+    grid-column: 3;
+    grid-row: span 2;
+}
+#div16 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pic2 {
     border: 1px solid black;
 }
-
+#birthday {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #1C1C1C;
+    height: 450px;
+}
+#birthday-text {
+    width: 40%;
+    padding-left: 50px;
+}
+#birthday-text > h2 {
+    color: white;
+}
+#birthday-img {
+    width: 55%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 170px);
+    gap: 10px;
+}
+#div5 {
+    grid-column: 1;
+    grid-row: 1;
+}
+#div5 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#div6 {
+    grid-column: 1;
+    grid-row: 2;
+}
+#div6 >img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#div7 {
+    grid-column: 2;
+    grid-row: span 2;
+}
+#div7 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#div8 >img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#div9 >img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;   
+}
+.pic1 {
+    border: 1px solid black;
+}
+#footer {
+    display: flex;
+    gap: 10%;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: black;
+}
+#footer > div > h2 {
+    text-align: center;
+    color: white;
+}
+hr {
+    width: 50px;
+    height: 2px;
+    background-color: goldenrod;
+    border: none;
+    margin-left: 100px;
+}
+#footer >div >p {
+    text-align: center;
+    color: white;
+}
+#links {
+    display: flex;
+    padding-left: 15px;
+    gap: 20px;
+}
+.footer-icon {
+    font-size: 20px;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    padding: 10px 30px 10px 10px;
+    border-radius: 50%;
+}
+.quick {
+    color: goldenrod;
+}
+.quick > a {
+    text-decoration: none;
+    color: white;
+}
+.service {
+    color:goldenrod;
+}    
+.service > a {
+    color: white;
+    text-decoration: none;
+}
+#contact > ul > div >img {
+    width: 20px;
+    height: 20px;
+}
+#contact > ul > div {
+    display: flex;
+    gap: 20px;
+}
+#contact > ul > div > p {
+    color: white;
+}
+#contact > ul >p {
+    color: goldenrod;
+}
+.home-icon {
+    font-size: 20px;
+    color: goldenrod;
+}
+ul {
+    list-style-type: none;
+}
