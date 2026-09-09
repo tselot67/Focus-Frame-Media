@@ -113,7 +113,7 @@ nav > a{
     gap: 50px;
     margin: 230px 30px 200px 30px;
     height: 480px;
-    background-color: white;
+    background-color: #242424;
 }
 #featured {
     display: flex;
@@ -122,6 +122,12 @@ nav > a{
 #feature {
     padding-top: 30px;
     padding-left: 100px;
+}
+#feature p {
+    color: goldenrod;
+}
+#feature h2 {
+    color: white;
 }
 #featureBtn {
     margin-top: 80px;
@@ -137,7 +143,7 @@ nav > a{
     color: black;
 }
 body {
-    background-color: rgb(240, 239, 239);
+    background-color: #1C1C1C;
 }
 #pics {
     margin-left: 100px;
@@ -155,6 +161,63 @@ body {
     width: 100%;
     object-fit: cover;
 }
+.pic {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.pic::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.pic-info {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.pic-info h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.pic-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #dddddd;
+}
+.pic:hover::after {
+    opacity: 1;
+}
+
+.pic:hover .pic-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pic:hover img {
+    transform: scale(1.05);
+}
+
 #footer {
     display: flex;
     gap: 10%;
