@@ -49,3 +49,292 @@ nav > a{
     background-color: goldenrod;
     border: none;
 }
+#hero {
+    height: 330px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 50px;
+    padding-top: 80px;
+    position: relative;
+    background-image: url('../images/camera.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: brown;
+}
+#our {
+  color: goldenrod;
+}
+h1 >strong {
+  color: goldenrod;
+}
+#hero > h1 {
+  color: white;
+}
+#p1 {
+  color: white;
+}
+#services {
+    width: 100%;
+    min-height: 145px;
+    background: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 5%;
+    border-bottom: 1px solid #242424;
+}
+
+.serv {
+    width: 20%;
+    min-height: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    border-right: 1px solid #292929;
+    padding: 5px 20px;
+}
+
+.serv:last-child {
+    border-right: none;
+}
+
+/* Icons */
+.serv i,
+.serv img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.serv i {
+    color: #d4af37;
+    font-size: 27px;
+}
+.sel {
+    filter: brightness(0) 
+    saturate(100%)
+            invert(72%) sepia(35%) 
+            saturate(700%)
+    hue-rotate(5deg);
+}
+.serv strong {
+    font-weight: normal;
+}
+#packages{
+    width: 100%;
+    background-color: #0d0d0d;
+    padding: 80px 8%;
+    color: white;
+}
+#package{
+    color: #d4af37;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+#packages h1{
+    font-size: 45px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#packages h1 strong{
+    color: #d4af37;
+}
+
+#p2{
+    color: #a0a0a0;
+    margin-bottom: 40px;
+}
+#packages > div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.box{
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.box:hover{
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+.box img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+.box > div:last-child{
+    padding: 25px;
+}
+
+.box h3{
+    font-size: 28px;
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.box h3 strong{
+    font-weight: normal;
+}
+
+.box h3 + p{
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.box h1{
+    color: #d4af37;
+    font-size: 35px !important;
+    margin-bottom: 20px;
+}
+
+.box h1 small{
+    color: #999;
+    font-size: 12px;
+    font-family: Arial;
+}
+.box hr{
+    border: none;
+    border-top: 1px solid #333;
+    margin: 15px 0;
+}
+.box > div:last-child > p:nth-of-type(2){
+    color: #d4af37;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.box > div:last-child > p{
+    color: #c0c0c0;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.fa-check{
+    color: #d4af37;
+    margin-right: 8px;
+}
+
+.box button{
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid #d4af37;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box button:hover{
+    background-color: #d4af37;
+}
+
+.box button a{
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.box button:hover a{
+    color: black;
+}
+#footer {
+    display: flex;
+    gap: 10%;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: black;
+}
+#footer > div > h2 {
+    text-align: center;
+    color: white;
+}
+hr {
+    width: 50px;
+    height: 2px;
+    background-color: goldenrod;
+    border: none;
+    margin-left: 100px;
+}
+#footer >div >p {
+    text-align: center;
+    color: white;
+}
+#links {
+    display: flex;
+    padding-left: 15px;
+    gap: 20px;
+}
+.footer-icon {
+    font-size: 20px;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    padding: 10px 30px 10px 10px;
+    border-radius: 50%;
+}
+.quick {
+    color: goldenrod;
+}
+.quick > a {
+    text-decoration: none;
+    color: white;
+}
+.service {
+    color:goldenrod;
+}    
+.service > a {
+    color: white;
+    text-decoration: none;
+}
+#contact > ul > div >img {
+    width: 20px;
+    height: 20px;
+}
+#contact > ul > div {
+    display: flex;
+    gap: 20px;
+}
+#contact > ul > div > p {
+    color: white;
+}
+#contact > ul >p {
+    color: goldenrod;
+}
+.home-icon {
+    font-size: 20px;
+    color: goldenrod;
+}
+ul {
+    list-style-type: none;
+}
+
+@media(max-width:900px){
+
+    #packages > div:nth-child(2){
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    #packages > div:nth-child(2){
+        grid-template-columns: 1fr;
+    }
+
+    #packages h1{
+        font-size: 35px;
+    }
+}
