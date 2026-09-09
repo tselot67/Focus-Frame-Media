@@ -56,6 +56,10 @@ nav > a{
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    background-image: url('../images/gallery.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid black;
     padding-left: 30px;
     padding-top: 50px;
