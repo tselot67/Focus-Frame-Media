@@ -65,6 +65,12 @@ nav > a{
     padding-top: 50px;
     position: relative;
 }
+#hero > h1 {
+    text-align: center;
+    color: #bdbcbc;
+    font-size: 75px;
+    text-transform: uppercase;
+}
 .portfolio {
     border: 1px solid #242424;
     height: 400px;
