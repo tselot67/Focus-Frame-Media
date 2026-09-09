@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> Focus Frame Media</title>
+        <link href="./styles/about.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"/>
 
-    <title>About | Focus Frame Media</title>
-
-    <link rel="stylesheet" href="./styles/about.css">
-</head>
-
-<body>
-
-    <section id="container">
+    </head>
+    <body>
+        <section id="container">
         <!-- This is navigation part-->
             <section id="nav">
                 <div id="nav-h1">
@@ -30,19 +28,38 @@
                     <button> <a href="./contact.html"> BOOK A SESSION </a> </button>
                 </div>
             </section>
-            
-            <!--This is the hero section-->
-            <section id="hero">
-                <div id="hero-text">
-                    <p class="p1"> ABOUT US </p><br>
-                    <h2 class="h"> ABOUT THE </h2>
-                    <h1 class="hh"> LENS </h1><br>
-                    <p class="p2"> Every photograph has a story.<br>
-                        We capture the moment before<br>
-                        it becomes a memory.
-                    </p>
-                </div>
-            </section>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="about-hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">ABOUT US</p>
+
+            <h1>
+                ABOUT THE
+                <span>LENS</span>
+            </h1>
+
+            <p class="hero-description">
+                Every photograph has a story.
+                We capture the moment before
+                it becomes a memory.
+            </p>
+
+            <div class="gold-line"></div>
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="./images/girl with camera.jpg"
+                 alt="Photographer holding a camera">
+
+        </div>
+    </section>
 
 
     <!-- ================= PHOTOGRAPHERS ================= -->
@@ -50,58 +67,41 @@
     <section class="photographers">
 
         <div class="section-intro">
-
             <p class="small-title">OUR PHOTOGRAPHERS</p>
-
             <h2>
                 THE PEOPLE<br>
                 BEHIND THE FRAME
             </h2>
-
             <p>
                 We are a team of passionate storytellers
                 who turn moments into timeless visuals.
                 Each of us brings a unique perspective,
                 style and creativity to every shoot.
             </p>
-
         </div>
-
-
         <div class="photographer-cards">
-
             <!-- PHOTOGRAPHER 1 -->
-
             <article class="photographer-card">
-
                 <div class="profile-image">
-                    <img src="images/photographer1.jpg"
-                         alt="Photographer Eman">
+                    <img src=""
+                         alt="Photographer Tselot">
                 </div>
-
                 <div class="profile-overlay">
-
                     <span class="number">01</span>
-
-                    <h3>EMAN</h3>
-
+                    <h3>TSELOT</h3>
                     <p class="role">
                         Portrait & Wedding Photographer
                     </p>
-
                     <p class="quote">
                         "I look for the moments people
                         don't notice — the quiet, the real,
                         the in-between."
                     </p>
-
                     <div class="profile-info">
                         <span>♙ &nbsp; 8 YEARS EXPERIENCE</span>
                         <span>⌖ &nbsp; PORTRAIT & WEDDING</span>
                     </div>
-
                 </div>
-
             </article>
 
 
@@ -109,60 +109,42 @@
 
             <article class="photographer-card">
                 <div class="profile-image">
-                    <img src="images/photographer2.jpg"
-                         alt="Photographer Daniel">
+                    <img src=""
+                         alt="Photographer Kidist">
                 </div>
-
                 <div class="profile-overlay">
-
                     <span class="number">02</span>
-
-                    <h3>DANIEL</h3>
-
+                    <h3>KIDIST</h3>
                     <p class="role">
                         Videographer & Photographer
                     </p>
-
                     <p class="quote">
                         "I love the energy of real moments
                         and the raw emotions that come
                         with them."
                     </p>
-
                     <div class="profile-info">
                         <span>♙ &nbsp; 5 YEARS EXPERIENCE</span>
                         <span>⌖ &nbsp; EVENTS & BRAND SHOOTS</span>
                     </div>
-
                 </div>
-
             </article>
-
         </div>
-
     </section>
-
-
     <!-- ================= SHOOTING STYLE ================= -->
-
     <section class="shooting-style">
-
         <div class="style-intro">
-
             <p class="small-title">OUR STYLE</p>
-
             <h2>
                 OUR<br>
                 VISUAL<br>
                 LANGUAGE
             </h2>
-
             <div class="style-tags">
                 <span>CINEMATIC</span>
                 <span>EMOTIONAL</span>
                 <span>AUTHENTIC</span>
             </div>
-
             <p>
                 We focus on natural expressions,
                 dramatic composition and cinematic
@@ -170,187 +152,101 @@
                 a moment, we create photographs that
                 make you feel like you're inside it.
             </p>
-
         </div>
-
-
         <div class="style-items">
-
             <!-- LIGHT -->
-
             <div class="style-item">
-
                 <div class="style-image">
-                    <img src="images/light.jpg"
+                    <img src="/images/light.jpg"
                          alt="Cinematic lighting">
                 </div>
-
                 <span class="style-number">01</span>
-
                 <h3>LIGHT</h3>
-
                 <p>
                     We use natural and cinematic
                     lighting to add depth and emotion.
                 </p>
-
             </div>
-
-
             <!-- COMPOSITION -->
-
             <div class="style-item">
-
                 <div class="style-image">
-                    <img src="images/composition.jpg"
+                    <img src="./images/composition.jpg"
                          alt="Photography composition">
                 </div>
-
                 <span class="style-number">02</span>
-
                 <h3>COMPOSITION</h3>
-
                 <p>
                     We frame with intention,
                     turning everyday scenes
                     into art.
                 </p>
-
             </div>
-
-
             <!-- EMOTION -->
-
             <div class="style-item">
-
                 <div class="style-image">
-                    <img src="images/emotion.jpg"
+                    <img src="./images/emotion.jpg"
                          alt="Emotional photography">
                 </div>
-
                 <span class="style-number">03</span>
-
                 <h3>EMOTION</h3>
-
                 <p>
                     We capture real feelings,
                     not just how things look.
                 </p>
-
             </div>
-
         </div>
-
     </section>
-
-
     <!-- ================= EQUIPMENT ================= -->
-
     <section class="equipment">
-
         <div class="equipment-image">
-
-            <img src="images/camera.jpg"
+            <img src="./images/equipment.jpg"
                  alt="Professional camera">
-
-            <div class="equipment-caption">
-                <span></span>
-
-                <p>
-                    THE RIGHT<br>
-                    TOOLS<br>
-                    BRING<br>
-                    OUR VISION<br>
-                    TO LIFE
-                </p>
-            </div>
-
         </div>
-
-
         <div class="equipment-content">
-
             <p class="small-title">THE TOOLS</p>
-
             <h2>
                 BEHIND THE FRAME
             </h2>
-
             <div class="equipment-grid">
-
                 <!-- CAMERA -->
-
                 <div class="equipment-item">
                     <div class="equipment-icon">◉</div>
-
                     <h3>CAMERA</h3>
-
                     <p>Sony / Canon / Nikon</p>
-
-                    <small>
+                    <p>
                         Full frame & mirrorless
-                    </small>
-
+                    </p>
                 </div>
-
-
                 <!-- LENSES -->
-
                 <div class="equipment-item">
-
                     <div class="equipment-icon">◌</div>
-
                     <h3>LENSES</h3>
-
                     <p>35mm · 50mm · 85mm</p>
-
-                    <small>
+                    <p>
                         Prime & zoom
-                    </small>
-
+                    </p>
                 </div>
-
-
                 <!-- LIGHTING -->
-
                 <div class="equipment-item">
-
                     <div class="equipment-icon">☼</div>
-
                     <h3>LIGHTING</h3>
-
                     <p>Natural Light · Flash · Softbox</p>
-
-                    <small>
+                    <p>
                         Studio & on-location
-                    </small>
-
+                    </p>
                 </div>
-
-
                 <!-- METHOD -->
-
                 <div class="equipment-item">
-
                     <div class="equipment-icon">⚙️</div>
-
                     <h3>METHOD</h3>
-
                     <p>Candid · Editorial · Cinematic</p>
-
-                    <small>
+                    <p>
                         Natural flow
-                    </small>
-
+                    </p>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
     <!-- This is a footer section -->
         <section id="footer">
             <div>
