@@ -331,6 +331,10 @@ ul {
 
 @media(max-width:600px){
 
+    #nav > div > nav {
+        display: none;
+    }
+
     #packages > div:nth-child(2){
         grid-template-columns: 1fr;
     }

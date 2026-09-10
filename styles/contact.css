@@ -334,3 +334,8 @@ form button:hover {
 ul {
     list-style-type: none;
 }
+@media  screen and (max-width: 600px) {
+    #nav > div > nav {
+        display: none;
+    }
+}

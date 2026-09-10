@@ -287,4 +287,37 @@ hr {
 ul {
     list-style-type: none;
 }
-
+/*TABLET*/
+@media screen and (max-width: 1024px)
+{
+    /*plans*/
+    #plans {
+        left: 5%;
+        width: 90%;
+        gap: 20px;
+    }
+    .plan{
+        padding: 15px;
+        gap: 10px;
+    }
+}
+/*PHONE*/
+@media screen and (max-width: 600px) {
+    /*NAVIGATION*/
+    #nav > div >nav {
+        display: none;
+    }
+    /*plans*/
+    #plans {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        margin: -30px 20px 40px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .plan  {
+        width: 100%;
+    }
+}
